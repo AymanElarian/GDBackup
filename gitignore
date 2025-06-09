@@ -21,6 +21,14 @@ obj/
 *.log
 *.zip
 publish/
+# Build artefacts anywhere
+bin/
+obj/
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/publish/
 
 # ── OS clutter ─────────────────────────────────────────────────────
 Thumbs.db
