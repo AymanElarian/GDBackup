@@ -1,46 +1,58 @@
-# ── Core .NET / Visual Studio ──────────────────────────────────────
+############################### BUILD OUTPUT ###############################
+# Ignore *any* folder named bin, obj, Debug, Release or publish anywhere
 bin/
 obj/
-.vs/
-*.user
-*.suo
-*.userprefs
-*.csproj.user
-
-# ── Rider / JetBrains / VS Code ────────────────────────────────────
-.idea/
-.vscode/
-*.DotSettings
-*.dotCover
-
-# ── Build artefacts ────────────────────────────────────────────────
-*.exe
-*.dll
-*.pdb
-*.cache
-*.log
-*.zip
+Debug/
+Release/
 publish/
-# Build artefacts anywhere
-bin/
-obj/
 **/bin/
 **/obj/
 **/Debug/
 **/Release/
 **/publish/
+###########################################################################
 
-# ── OS clutter ─────────────────────────────────────────────────────
+
+# Rider / JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# MSBuild / VS user settings
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+*.vcxproj.user
+*.DotSettings
+*.dotCover
+
+####################################################################
+# Logs, cache, temp
+####################################################################
+*.log
+*.cache
+
+####################################################################
+# OS clutter
+####################################################################
 Thumbs.db
 .DS_Store
 
-# ── Sensitive or machine-specific config ───────────────────────────
-appsettings.json       # each developer keeps a local copy
-appsettings.*.json     # e.g. appsettings.Development.json
+####################################################################
+# Local configuration (keep out of repo)
+####################################################################
+appsettings.json
+appsettings.*.json
 
-# ── Runtime artefacts created by the program itself ───────────────
-GD_Backups/            # snapshots (BackupRoot)
-Assets/                # deduplicated media pool (inside BackupRoot)
+####################################################################
+# Runtime artefacts created by the program
+####################################################################
+GD_Backups/
+Assets/
 
-# ── NuGet / dotnet restore cache (optional) ───────────────────────
+####################################################################
+# NuGet packages (optional – comment if you keep packages folder)
+####################################################################
 packages/
