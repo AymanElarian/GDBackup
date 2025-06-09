@@ -1,0 +1,38 @@
+# ── Core .NET / Visual Studio ──────────────────────────────────────
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+# ── Rider / JetBrains / VS Code ────────────────────────────────────
+.idea/
+.vscode/
+*.DotSettings
+*.dotCover
+
+# ── Build artefacts ────────────────────────────────────────────────
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.zip
+publish/
+
+# ── OS clutter ─────────────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+
+# ── Sensitive or machine-specific config ───────────────────────────
+appsettings.json       # each developer keeps a local copy
+appsettings.*.json     # e.g. appsettings.Development.json
+
+# ── Runtime artefacts created by the program itself ───────────────
+GD_Backups/            # snapshots (BackupRoot)
+Assets/                # deduplicated media pool (inside BackupRoot)
+
+# ── NuGet / dotnet restore cache (optional) ───────────────────────
+packages/
